@@ -14,8 +14,8 @@ body{
 
 .circle {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: var(--size, 150px);
+    height: var(--size, 150px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,8 @@ body{
 
 .svg{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: var(--size, 150px);
+    height: var(--size, 150px);
     transform: rotate(270deg);
 
 }
@@ -45,14 +45,14 @@ body{
     stroke: var(--clr);
     stroke-width: 4;
     transform: translate(5px,5px);
-    stroke-dasharray: 440;
+    stroke-dasharray: 770;
 }
 
 .div{
     position: absolute;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .div span{
@@ -66,7 +66,7 @@ body{
 
 .ap{
     position: relative;
-    font-size: 1rem;
+    font-size: 2rem;
     transform: translateX(-20px);
 }
 
@@ -82,7 +82,7 @@ body{
 .dots::before{
     content: '';
     position: absolute;
-    top: -3px;
+    top: 10px;
     width: 15px;
     height: 15px;
     background: var(--clr);

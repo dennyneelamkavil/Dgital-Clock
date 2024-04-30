@@ -34,9 +34,9 @@ setInterval(() => {
     seconds.innerHTML = s + "<br><span>Seconds</span>";
     ampm.innerHTML = am;
 
-    hh.style.strokeDashoffset = 440 - (440 * h) / 12;
-    mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-    ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+    hh.style.strokeDashoffset = 770 - (770 * h) / 12;
+    mm.style.strokeDashoffset = 770 - (770 * m) / 60;
+    ss.style.strokeDashoffset = 770 - (770 * s) / 60;
 
 
     hr_dot.style.transform = `rotate(${h * 30}deg)`;
