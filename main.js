@@ -3,6 +3,7 @@ setInterval(() => {
     let minutes = document.getElementById("minutes");
     let seconds = document.getElementById("seconds");
     let ampm = document.getElementById("ampm");
+    let title = document.getElementById("title");
 
 
     let hh = document.getElementById("hh");
@@ -19,6 +20,11 @@ setInterval(() => {
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
     let am = h >= 12 ? "PM" : "AM";
+    let year = new Date().getFullYear();
+    let month = new Date().getMonth();
+    let day = new Date().getDate();
+    let months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    let monthName = months[month];
 
 
     if (h > 12) {
@@ -33,6 +39,7 @@ setInterval(() => {
     minutes.innerHTML = m + "<br><span>Minutes</span>";
     seconds.innerHTML = s + "<br><span>Seconds</span>";
     ampm.innerHTML = am;
+    title.innerHTML = monthName + " " + day + ", " + year + " - " + h + ":" + m + ":" + s + " " + am;
 
     hh.style.strokeDashoffset = 770 - (770 * h) / 12;
     mm.style.strokeDashoffset = 770 - (770 * m) / 60;
